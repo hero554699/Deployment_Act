@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 
 Route::get('/', function () {
-    return view('books');
+    return redirect('/books');
 });
 
 Route::get('books', [BookController::class, 'index']);
